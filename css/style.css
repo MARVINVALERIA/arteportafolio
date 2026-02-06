@@ -1,0 +1,112 @@
+/* 1. Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background: #000;
+    /* Negro para que el video resalte */
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* 2. Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    /* Capa oscura para leer mejor el texto */
+}
+
+/* 3. Botones */
+.buttons {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+/*.btn {
+    padding: 14px 28px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    background: transparent;
+    color: #ffffff;
+    transition: 0.3s;
+}*/
+
+.btn {
+    padding: 14px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+    /* Efecto Liquid Glass */
+    background: rgba(255, 255, 255, 0.05);
+    /* Fondo casi invisible */
+    backdrop-filter: blur(12px) saturate(180%);
+    /* Desenfoque y realce de color */
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+
+    /* Borde sutil que brilla */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    /* Sombra suave para dar profundidad */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+    /* Para que el texto siempre sea legible */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    /* Se aclara un poco */
+    border-color: rgba(255, 255, 255, 0.4);
+    /* El borde brilla más */
+    transform: translateY(-2px);
+    /* Pequeño salto hacia arriba */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto al hacer clic */
+.btn:active {
+    transform: translateY(1px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* 4. Video de fondo */
+#video-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* 5. Otros estilos (Grid y Footer) */
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}

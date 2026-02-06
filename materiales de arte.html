@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✮ Marvin Marin · Arte ✮</title>
+  <link rel="stylesheet" href="css/style3.css">
+</head>
+
+<body class="dark-mode">
+
+  <video id="video-fondo" autoplay loop muted playsinline>
+    <source src="videos/vangoghfondo.mp4" type="video/mp4">
+  </video>
+
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <nav id="sidebar" class="liquid-panel">
+    <div class="panel-content">
+      <h2 class="brand">MARVIN MARIN</h2>
+      <ul class="nav-links">
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="canal.html">Canal de Dibujo y Pintura</a></li>
+        <li><a href="arteninos.html">Talleres Arte para Niños</a></li>
+        <li><a href="tecnicadibujopintura.html">Técnicas de Dibujo y Pintura</a></li>
+        <li><a href="influenciasartisticas.html">Influencias Artísticas</a></li>
+        <li><a href="materiales de arte.html">Materiales de Arte</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <div class="settings-group">
+        <p class="label">Configuración</p>
+        <div class="option">
+          <span>Modo Desenfoque</span>
+          <label class="ios-switch">
+            <input type="checkbox" onchange="document.getElementById('video-fondo').classList.toggle('extra-blur')">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <a href="index.html" class="btn-explore">INICIO</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="hero-container" id="main-content">
+    <header class="hero-text">
+      <h1>Marvin Marin</h1>
+      <p>Arte & Expresión</p>
+    </header>
+
+    <section class="insta-grid" id="Galeria">
+      <div class="insta-item"
+        style="grid-column: span 4; height: auto; display: flex; flex-direction: column; padding: 15px; background: rgba(255,255,255,0.05);">
+
+        <div style="width: 100%; aspect-ratio: 16 / 9; margin-bottom: 20px; overflow: hidden; border-radius: 5px;">
+          <iframe width="100%" height="100%" src="videos/Guernica.mp4" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen style="border-radius: 10px;">
+          </iframe>
+        </div>
+
+        <div style="padding: 20px 5px; text-align: center;">
+          <h3 style="color: #04f3b7; margin-bottom: 20px; font-weight: 300;">
+            PABLO PICASSO
+          </h3>
+          <p style="font-size: 0.9rem; text-align: justify; opacity: 0.8; line-height: 1.5;">
+            va tu texto artístico. Al usar el justificado, los bordes izquierdo y derecho
+            quedarán perfectamente alineados, dándole un aspecto mucho más limpio y profesional
+            a tu cajuela de video.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="insta-item"
+        style="grid-column: span 4; height: auto; display: flex; flex-direction: column; padding: 15px; background: rgba(255,255,255,0.05);">
+
+        <div style="width: 100%; aspect-ratio: 16 / 9; margin-bottom: 20px; overflow: hidden; border-radius: 5px;">
+          <iframe width="100%" height="100%" src="videos/vangoghmar.mp4" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen style="border-radius: 10px;">
+          </iframe>
+        </div>
+
+        <div style="padding: 20px 5px; text-align: center;">
+          <h3 style="color: #04f3b7; margin-bottom: 20px; font-weight: 300;">
+            VINCENT VAN GOGH
+          </h3>
+          <p style="font-size: 0.9rem; text-align: justify; opacity: 0.8; line-height: 1.5;">
+            va tu texto artístico. Al usar el justificado, los bordes izquierdo y derecho
+            quedarán perfectamente alineados, dándole un aspecto mucho más limpio y profesional
+            a tu cajuela de video.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>© 2026 Marvin Marin</footer>
+  </main>
+
+  <div id="insta-modal" class="insta-modal">
+    <div class="modal-content">
+      <img id="modal-img" src="" alt="Vista previa">
+    </div>
+  </div>
+
+
+</body>
+
+</html>
+<script src="js/galeria.js"></script>

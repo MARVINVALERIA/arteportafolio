@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✮ Marvin Marin · Arte ✮</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body class="dark-mode">
+
+  <video id="video-fondo" autoplay loop muted playsinline>
+    <source src="videos/vangoghfondo.mp4" type="video/mp4">
+  </video>
+
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+  <nav id="sidebar" class="liquid-panel">
+    <div class="panel-content">
+      <h2 class="brand">MARVIN MARIN</h2>
+
+      <ul class="nav-links">
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="canal.html">Canal de Dibujo y Pintura</a></li>
+        <li><a href="arteninos.html">Talleres Arte para Niños</a></li>
+        <li><a href="tecnicadibujopintura.html">Técnicas de Dibujo y Pintura</a></li>
+        <li><a href="influenciasartisticas.html">Influencias Artísticas</a></li>
+        <li><a href="materiales de arte.html">Materiales de Arte</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+
+      <div class="settings-group">
+        <p class="label">Configuración</p>
+        <div class="option">
+          <span>Modo Desenfoque</span>
+          <label class="ios-switch">
+            <input type="checkbox" onchange="document.getElementById('video-fondo').classList.toggle('extra-blur')">
+            <span class="slider"></span>
+          </label>
+        </div>
+
+        <a href="index.html" class="btn-explore">INICIO</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="hero-container" id="main-content">
+    <div class="hero-text">
+      <h1>Marvin Marin</h1>
+      <center>
+        <p>Redes Sociales&nbsp;</p>
+        <p><img src="imagenes/logo_tik_tok.png" width="80" height="80" alt="" /><a
+            href="https://www.tiktok.com/@dibujantex10?_r=1&amp;_t=ZS-93cmyF2YHRJ"></a><a
+            href="https://youtube.com/@dibujantex10?si=_YHDnCknFWwtvV8y"><img src="imagenes/logo_youtube.png" width="90"
+              height="90" width="90" alt=""></a><a href="https://youtube.com/@dibujantex10?si=_YHDnCknFWwtvV8y"></a><a
+            href="https://www.instagram.com/dibujantex10?igsh=MXN4N3IxMGZyMmJqMQ=="><img
+              src="imagenes/logo_instagram.png" width="87" height="87" alt=""></a>&nbsp;&nbsp;</p>
+        <a href="https://youtube.com/@dibujantex10?si=_YHDnCknFWwtvV8y"></a> <a
+          href="https://www.instagram.com/dibujantex10?igsh=MXN4N3IxMGZyMmJqMQ=="></a>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+      </center>
+    </div>
+    <footer>© 2026 Marvin Marin</footer>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('sidebar').classList.toggle('active');
+      document.getElementById('main-content').classList.toggle('shifted');
+    }
+  </script>
+</body>
+
+</html>
